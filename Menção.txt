@@ -1,0 +1,22 @@
+/* Listar tres funcionarios e seus respectivos enderecos */
+
+/* Listar os funcioarios, o codigo do departamento em que trabalham
+e seus respectivos salarios, iniciando com o maior valor */
+
+/* Listar os funcioarios, cujo o salario a maior que 1000, mostrar o respectivo
+salario e o departamento que possivelmente eles gerenciam */
+
+/* Listar os projetos que tenham funcionorios associados */
+
+/* Listar o nome dos dependentes que sao filhos dos funcionarios */
+
+/* Listar os departamentos codificados com 456 ou mais, mostrar tambem
+seu endereco */
+
+/* Listar o parentesco dos dependentes */
+
+/* Listar os funcionarios que recebem um salario maior que 950 ate 2500 */
+
+/* Selecionar os projetos de verbas indeterminadas e os que possuem cinco bolsas */
+
+/* Selecionar os dependentes que nao sao filhos ou filhas */

@@ -1,0 +1,37 @@
+/* Listar tres funcionarios e seus respectivos enderecos */
+Select nm_func as Nome, nm_endereco as Endereços from func
+ where cd_func <= 398569902;
+ 
+/* Listar os funcioarios, o codigo do departamento em que trabalham
+e seus respectivos salarios, iniciando com o maior valor */
+select nm_func as Nome, cd_dpto as Departamento, vl_salario as 'salário bruto' from func 
+order by -vl_salario;
+
+/* Listar os funcioarios, cujo o salario a maior que 1000, mostrar o respectivo*/
+select vl_salario as Salario, nm_func as Funcionario, cd_dpto from func where vl_salario > 1000;
+
+/*salario e o departamento que possivelmente eles gerenciam */
+Select nm_func as Nome, vl_salario as Salário, cd_dpto_gerenciar as Departamento from func
+ where cd_func = 398569902;
+
+/* Listar os projetos que tenham funcionorios associados */
+select cd_func, cd_projeto from func_projeto;
+
+/* Listar o nome dos dependentes que sao filhos dos funcionarios */
+select nm_dependente as Nome, nm_parentesco as Parentesco from dependente where nm_parentesco like 'filh%';
+
+/* Listar os departamentos codificados com 456 ou mais, mostrar tambem
+seu endereco */
+select * from dpto where cd_dpto >= 456 ;
+
+/* Listar o parentesco dos dependentes */
+select nm_parentesco as Parentescos from dependente;
+
+/* Listar os funcionarios que recebem um salario maior que 950 ate 2500 */
+select * from func where vl_salario=950 && vl_salario=2500;
+
+/* Selecionar os projetos de verbas indeterminadas e os que possuem cinco bolsas */
+select nm_tipo as Tipo, nm_verbba as Verba from projeto where nm_verbba like '5%'; 
+
+/* Selecionar os dependentes que nao sao filhos ou filhas */
+select nm_dependente as Nome, nm_parentesco as Parentesco from dependente where nm_parentesco like 'pai%';
